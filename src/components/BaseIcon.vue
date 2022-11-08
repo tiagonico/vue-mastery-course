@@ -1,5 +1,10 @@
 <template>
-  <div class="icon-wrapper" v-html="svg">
+  <div style="display: flex;">
+    <span class="icon-wrapper" v-html="svg"></span>
+    <div style="font-weight: bold;font-size: larger;">
+      <slot></slot>
+    </div>
+    
   </div>
 </template>
 
